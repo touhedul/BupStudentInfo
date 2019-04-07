@@ -88,7 +88,7 @@ class AdminController extends Controller
         $course->name = $request->name;
         $course->credit = $request->credit;
         $course->save();
-        return back()->with('success', 'Course Add successful.');
+        return back()->with('success', 'Course is added successful.');
     }
 
     public function deleteCourse(Request $request)

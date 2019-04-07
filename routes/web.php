@@ -63,7 +63,7 @@ Route::prefix('admin')->group(function () {
 });
 
 
-//student
+//student routes
 Route::name('student.')->group(function () {
     Route::get('profile', 'Student\StudentHomeController@profile')->name('profile');
     Route::get('current/course', 'Student\StudentHomeController@currentCourse')->name('current.course');
